@@ -8,6 +8,7 @@ Flask==2.2.2
 fst-pso==1.8.1
 FuzzyTM==2.0.5
 gensim==3.8.3
+gunicorn==20.1.0
 idna==3.4
 importlib-metadata==6.0.0
 itsdangerous==2.1.2
