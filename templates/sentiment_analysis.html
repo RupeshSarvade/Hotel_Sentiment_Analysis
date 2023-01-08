@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form method="POST">
+        <label for="review">Write a review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if review %}
+        <h2>Result: {{ emojis }}</h2>
+        <h3>TextBlob score: {{ score }}</h3>
+        <h3>Keyword: {{ keyword }}</h3>
+    {% endif %}
+</body>
+</html>
