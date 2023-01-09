@@ -7,7 +7,7 @@ from gensim.summarization import keywords
 app = Flask(__name__)
 
 # load pickle models
-model = pickle.load(open('svc.pkl', 'rb'))
+model = pickle.load(open('xgb.pkl', 'rb'))
 vectorizer = pickle.load(open('tfidf.pkl', 'rb'))
 
 @app.route('/', methods=['GET', 'POST'])
