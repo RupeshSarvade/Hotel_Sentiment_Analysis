@@ -1,0 +1,159 @@
+body {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    background: rgb(63, 161, 251);
+    background: linear-gradient(
+      142deg,
+      rgba(63, 161, 251, 1) 0%,
+      rgba(252, 70, 168, 1) 100%
+    );
+  }
+
+h1 {
+    order: 2;
+    color: #fde9ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 7vw, 4rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+      3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+      6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+      6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+      9px 7px 1px #4af7ff;
+}
+
+form {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: left;
+    width: 50%;
+}
+
+textarea {
+    background-color: #ffffff;
+    border: 1px solid #cfd8dc;
+    font-size: 18px;
+    height: 150px;
+    padding: 15px;
+    width: 100%;
+}
+
+input[type="submit"] {
+	padding: 10px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  
+	border-radius: 7px;
+	border-bottom-left-radius: 0;
+  
+	background-color: var(--feedback-secondary-color);
+	color: var(--feedback-primary-color);
+  
+	transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(252, 70, 168, 1); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30,end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white(252, 70, 168, 1) }
+  }
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    padding: 10px;
+    margin: 60px
+}
+
+h3{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(252, 70, 168, 1); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:white(252, 70, 168, 1) }
+  }
+
+  h4{
+    background-color: #ae4bc2;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(252, 70, 168, 1); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:white(252, 70, 168, 1) }
+  }
+  
+  
+
+
+p {
+    color: #455a64;
+    font-size: 18px;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}

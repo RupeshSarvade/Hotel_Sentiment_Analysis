@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form method="POST">
+        <!-- <label for="review">Write a review:</label><br> -->
+        <textarea id="review" name="review" rows="4" cols="50" placeholder="Enter your review here..."></textarea><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if review %}
+        <h2>Sentiment: {{ emojis }}</h2>
+        <h3>Score: {{ score }}</h3>
+        <h4>Important Keywords:</h4>
+        <h4>{% for word in keyword %}
+            <li>{{ word }}</li>
+        {% endfor %}</h4>
+    {% endif %}
+</body>
+</html>
